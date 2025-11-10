@@ -40,7 +40,7 @@ npm start
 Now open the app in your browser:
 
 ```
-http://localhost:3000
+http://localhost:8080
 ```
 
 To test with multiple users, open the same URL in different tabs or devices on the same network.
