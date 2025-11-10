@@ -16,7 +16,7 @@ Built from scratch using **HTML5 Canvas**, **Node.js**, and **WebSockets**, it f
 
 ---
 
-## 🤩 Tech Stack
+##  Tech Stack
 
 | Component    | Technology                              |
 | ------------ | --------------------------------------- |
@@ -26,7 +26,7 @@ Built from scratch using **HTML5 Canvas**, **Node.js**, and **WebSockets**, it f
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 Clone the repository and install dependencies:
 
@@ -47,7 +47,7 @@ To test with multiple users, open the same URL in different tabs or devices on t
 
 ---
 
-## 🧠 How It Works (Brief Overview)
+##  How It Works (Brief Overview)
 
 Each client connects to the server via **WebSocket**.
 Every drawing action (start, move, end) is serialized into a stroke event and broadcast to all connected clients.
@@ -57,7 +57,7 @@ The **global undo/redo system** works by maintaining a shared history of operati
 
 ---
 
-## 🮩 Folder Structure
+##  Folder Structure
 
 ```
 collaborative-canvas/
@@ -78,7 +78,7 @@ collaborative-canvas/
 
 ---
 
-## 🦪 Testing
+##  Testing
 
 * Open multiple browser tabs or devices
 * Draw simultaneously — changes appear instantly on all screens
@@ -87,7 +87,7 @@ collaborative-canvas/
 
 ---
 
-## ⏱️ Time Spent
+##  Time Spent
 
 Roughly **3 days** of development:
 
@@ -97,7 +97,7 @@ Roughly **3 days** of development:
 
 ---
 
-## 🌟 Future Enhancements
+##  Future Enhancements
 
 * Touch support for mobile devices
 * Multiple drawing rooms
