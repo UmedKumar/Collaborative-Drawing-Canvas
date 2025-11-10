@@ -32,7 +32,7 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/UmedKumar/Collaborative-Drawing-Canvas.git
-cd collaborative-canvas
+cd Collaborative-Drawing-Canvas
 npm install
 npm start
 ```
