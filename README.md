@@ -31,7 +31,7 @@ Built from scratch using **HTML5 Canvas**, **Node.js**, and **WebSockets**, it f
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/<your-username>/collaborative-canvas.git
+git clone https://github.com/UmedKumar/collaborative-canvas.git
 cd collaborative-canvas
 npm install
 npm start
