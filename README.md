@@ -1,94 +1,112 @@
-# 🎨 Collaborative Drawing Canvas
+# 🎨 Real-Time Collaborative Drawing Canvas
 
-A **real-time collaborative drawing application** where multiple users can draw together on a shared canvas simultaneously — built with **Vanilla JavaScript**, **HTML5 Canvas**, and **Node.js WebSockets**.
-
-![Demo Screenshot](https://github.com/UmedKumar/Collaborative-Drawing-Canvas/assets/your-image-link.png)
-
----
-
-## 🚀 Project Overview
-
-This project allows multiple users to collaborate on the same digital canvas in real-time.  
-Each user can draw, erase, change colors and brush sizes, undo/redo their actions, and see updates from other users instantly.
-
-🔗 **Live Demo:** _[coming soon]_  
-📂 **GitHub Repo:** [Collaborative-Drawing-Canvas](https://github.com/UmedKumar/Collaborative-Drawing-Canvas)
+A lightweight web app that lets multiple users draw together on the same canvas in **real time**.
+Built from scratch using **HTML5 Canvas**, **Node.js**, and **WebSockets**, it focuses on real-time synchronization, conflict handling, and smooth multi-user interaction — without any frontend frameworks.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-### 🖌️ Drawing Tools
-- Freehand drawing with customizable color and brush size  
-- Eraser tool  
-- Undo and redo support  
-
-### ⚡ Real-Time Collaboration
-- All strokes are synced instantly across users using WebSockets  
-- Multi-user synchronization (each participant sees others’ drawings live)  
-
-### 🧠 State Management
-- Centralized drawing state tracking on the server  
-- Smooth conflict resolution for overlapping strokes  
-- Undo/Redo operations tracked across all connected users  
-
-### 🧍 User Interaction
-- Visual indicators for connected users  
-- Each user’s color and actions reflected globally  
+* ✏️ **Drawing Tools:** Brush, eraser, color picker, and adjustable stroke width
+* 🔄 **Real-time Sync:** Instantly see other users’ drawings as they happen
+* 👥 **Live Cursors:** Each user’s cursor and color are visible on everyone’s screen
+* 🥯 **Undo/Redo:** Works globally across all users
+* 🔐 **User Management:** Displays online users with unique color identifiers
+* ⚡ **Smooth & Responsive:** Optimized canvas updates and event handling
 
 ---
 
-## 🧩 Tech Stack
+## 🤩 Tech Stack
 
-| Layer | Technology |
-|-------|-------------|
-| **Frontend** | HTML5, CSS3, Vanilla JavaScript |
-| **Backend** | Node.js, Native WebSocket API |
-| **Communication** | WebSockets for real-time sync |
-| **Version Control** | Git & GitHub |
-
----
-
-## 🗂️ Project Structure
-
-Collaborative-Drawing-Canvas/
-│
-├── client/
-│ ├── index.html # Main UI layout
-│ ├── style.css # Styles and toolbar design
-│ ├── canvas.js # Canvas drawing logic
-│ ├── websocket.js # WebSocket client setup
-│ └── main.js # App initialization
-│
-├── server/
-│ ├── server.js # Node.js + WebSocket server
-│ ├── rooms.js # Room/session management
-│ └── drawing-state.js # Canvas state and undo/redo logic
-│
-├── ARCHITECTURE.md # Detailed architecture documentation
-├── package.json # Dependencies and scripts
-└── README.md # Documentation
+| Component    | Technology                              |
+| ------------ | --------------------------------------- |
+| **Frontend** | HTML5, CSS3, Vanilla JavaScript         |
+| **Backend**  | Node.js, Express, Socket.io             |
+| **Protocol** | WebSocket (for real-time communication) |
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 🧾 Prerequisites
-Make sure you have:
-- Node.js (>= 16)
-- npm (>= 8)
-
-### 🧰 Setup Steps
+Clone the repository and install dependencies:
 
 ```bash
-# Clone the repository
-git clone https://github.com/UmedKumar/Collaborative-Drawing-Canvas.git
-
-# Navigate to the project
-cd Collaborative-Drawing-Canvas
-
-# Install dependencies
+git clone https://github.com/<your-username>/collaborative-canvas.git
+cd collaborative-canvas
 npm install
-
-# Start the server
 npm start
+```
+
+Now open the app in your browser:
+
+```
+http://localhost:3000
+```
+
+To test with multiple users, open the same URL in different tabs or devices on the same network.
+
+---
+
+## 🧠 How It Works (Brief Overview)
+
+Each client connects to the server via **WebSocket**.
+Every drawing action (start, move, end) is serialized into a stroke event and broadcast to all connected clients.
+The canvas on each client listens for incoming draw events and updates the screen in real time.
+
+The **global undo/redo system** works by maintaining a shared history of operations on the server and broadcasting state changes when someone triggers undo or redo.
+
+---
+
+## 🮩 Folder Structure
+
+```
+collaborative-canvas/
+├── client/
+│   ├── index.html
+│   ├── style.css
+│   ├── canvas.js          # Canvas drawing logic
+│   ├── websocket.js       # WebSocket client connection
+│   └── main.js            # App initialization
+├── server/
+│   ├── server.js          # Express + Socket.io setup
+│   ├── rooms.js           # Manages user rooms and sessions
+│   └── drawing-state.js   # Tracks drawing history and undo/redo logic
+├── package.json
+├── README.md
+└── ARCHITECTURE.md
+```
+
+---
+
+## 🦪 Testing
+
+* Open multiple browser tabs or devices
+* Draw simultaneously — changes appear instantly on all screens
+* Try undo/redo actions to verify global synchronization
+* Disconnect/reconnect a user to see consistent state handling
+
+---
+
+## ⏱️ Time Spent
+
+Roughly **3 days** of development:
+
+* Day 1 → Base structure, Canvas drawing, and sync setup
+* Day 2 → User tracking, live cursors, and real-time updates
+* Day 3 → Undo/redo, cleanup, and testing
+
+---
+
+## 🌟 Future Enhancements
+
+* Touch support for mobile devices
+* Multiple drawing rooms
+* Save/load sessions
+* Shape tools (rectangle, circle, text)
+* FPS and latency indicators
+
+---
+
+## 👤 Author
+
+Developed by **Umed Kumar**
