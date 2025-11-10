@@ -51,6 +51,23 @@ Each user can draw, erase, change colors and brush sizes, undo/redo their action
 
 ## 🗂️ Project Structure
 
+Collaborative-Drawing-Canvas/
+│
+├── client/
+│ ├── index.html # Main UI layout
+│ ├── style.css # Styles and toolbar design
+│ ├── canvas.js # Canvas drawing logic
+│ ├── websocket.js # WebSocket client setup
+│ └── main.js # App initialization
+│
+├── server/
+│ ├── server.js # Node.js + WebSocket server
+│ ├── rooms.js # Room/session management
+│ └── drawing-state.js # Canvas state and undo/redo logic
+│
+├── ARCHITECTURE.md # Detailed architecture documentation
+├── package.json # Dependencies and scripts
+└── README.md # Documentation
 
 ---
 
