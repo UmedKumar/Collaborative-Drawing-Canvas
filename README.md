@@ -107,6 +107,6 @@ Roughly **3 days** of development:
 
 ---
 
-## 👤 Author
+##  Author
 
 Developed by **Umed Kumar**
