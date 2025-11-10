@@ -1,18 +1,18 @@
-# 🎨 Real-Time Collaborative Drawing Canvas
+#  Real-Time Collaborative Drawing Canvas
 
 A lightweight web app that lets multiple users draw together on the same canvas in **real time**.
 Built from scratch using **HTML5 Canvas**, **Node.js**, and **WebSockets**, it focuses on real-time synchronization, conflict handling, and smooth multi-user interaction — without any frontend frameworks.
 
 ---
 
-## 🚀 Features
+##  Features
 
-* ✏️ **Drawing Tools:** Brush, eraser, color picker, and adjustable stroke width
-* 🔄 **Real-time Sync:** Instantly see other users’ drawings as they happen
-* 👥 **Live Cursors:** Each user’s cursor and color are visible on everyone’s screen
-* 🥯 **Undo/Redo:** Works globally across all users
-* 🔐 **User Management:** Displays online users with unique color identifiers
-* ⚡ **Smooth & Responsive:** Optimized canvas updates and event handling
+*  **Drawing Tools:** Brush, eraser, color picker, and adjustable stroke width
+*  **Real-time Sync:** Instantly see other users’ drawings as they happen
+*  **Live Cursors:** Each user’s cursor and color are visible on everyone’s screen
+*  **Undo/Redo:** Works globally across all users
+*  **User Management:** Displays online users with unique color identifiers
+*  **Smooth & Responsive:** Optimized canvas updates and event handling
 
 ---
 
